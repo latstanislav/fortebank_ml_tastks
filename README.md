@@ -9,10 +9,10 @@ project/
 │
 ├── data/                       # сырые датасеты, обработанные датасеты после EDA 
 ├── mlflow/                     # артефакты mlflow, логи mlflow
-├── notebooks/                  # только EDA и анализ, эксперименты
+├── notebooks/                  
+|   ├── EDA default_probability # Тут только EDA 
+|   └── EDA scoring_model       # Тут EDA и обучение с логированием метрик
 ├── src/
-│   ├── data/                   # функции обработки данных
-│   ├── features/               # analyze_and_select_features и прочий отбор признаков 
 │   ├── models/                 # train_and_log функция, метрики, калибровка
 │   │
 │   └── config.py               # ROOT_DIR, MLFLOW_TRACKING_URI
@@ -29,8 +29,10 @@ pip install -r requirements.txt
 Запуск MLflow в терминале (Linux)
 sh run_mlflow_server_locally.sh
 
-## Запуск обучения
-python src/models/train.py
+## Запуск обучения для default_probability
+python src/models/train_default_probability.py
+
+
 
 ## Данные
 - data/raw/ — сырые датасеты
