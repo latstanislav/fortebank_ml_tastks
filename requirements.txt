@@ -1,3 +1,5 @@
 openpyxl
 mlflow
 shap
+statsmodels
+catboost
