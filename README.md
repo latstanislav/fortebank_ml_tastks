@@ -5,6 +5,7 @@
 Модель прогнозирования вероятности дефолта на основе макрофакторов.
 
 ## Структура проекта
+```
 project/
 │
 ├── data/                       # сырые датасеты, обработанные датасеты после EDA 
@@ -21,6 +22,7 @@ project/
 ├── README.md
 ├── requirements.txt
 └── run_mlflow_server_locally.sh
+```
 
 ## Установка
 pip install -r requirements.txt
