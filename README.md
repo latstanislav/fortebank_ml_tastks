@@ -1,9 +1,5 @@
 # forteBank_ml_tastks
 
-# DR Macro Model
-
-Модель прогнозирования вероятности дефолта на основе макрофакторов.
-
 ## Структура проекта
 ```
 project/
@@ -33,8 +29,6 @@ sh run_mlflow_server_locally.sh
 
 ## Запуск обучения для default_probability
 python src/models/train_default_probability.py
-
-
 
 ## Данные
 - data/raw/ — сырые датасеты
